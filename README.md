@@ -40,4 +40,4 @@ This website serves as a template for personal blogs or any project needing a cl
 
 ## Contact Information
 
-For any queries, at GitHub Profile . https://github.com/kausar-blog.
+For any queries, you can reach out to me via my GitHub Profile: https://github.com/kausar-blog. or email: kausarprogrammer@gmail.com.
