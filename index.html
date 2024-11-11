@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- cdn  bootsrtrap incon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- css link-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- navbar part start -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-gradient px-4 border-bottom fixed-top"
+      style="box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2)"
+    >
+      <div class="container-fluid">
+        <!-- Brand Name -->
+        <a class="navbar-brand fs-2" href="#kausar_blog">
+          Kausar<span class="text-warning">_blog</span>
+        </a>
+
+        <!-- Navbar Toggle Button (For Mobile View) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#header_navber"
+          aria-controls="header_navber"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu (Links) -->
+        <div class="collapse navbar-collapse text-center" id="header_navber">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Our Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar part end -->
+
+    <!-- Hero Part Start -->
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
+      <!-- carousel-indicators start  -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#home"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#home"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#home"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <!-- carousel-inner start -->
+      <div class="carousel-inner">
+        <!-- carousel-item slide-1  -->
+        <div class="carousel-item active c-item">
+          <img
+            src="./img/carousel_1.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 1"
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase" style="color: #ffd700">
+              Empower Your Mind
+            </p>
+
+            <h3 class="display-1 fw-bolder" style="color: #00ffff">
+              Unlock the World of Programming
+            </h3>
+
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">
+              Start Learning
+            </button>
+          </div>
+        </div>
+        <!-- carousel-item slide-2 -->
+        <div class="carousel-item c-item">
+          <img
+            src="./img/carousel_2.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 2"
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5" style="color: #ff6347">
+              Code Your Future
+            </p>
+
+            <h3 class="display-1 fw-bolder" style="color: #ffff00">
+              Build Real Live Projects
+            </h3>
+
+            <button
+              class="btn btn-warning px-4 py-2 fs-5 mt-5"
+              data-bs-toggle="modal"
+              data-bs-target="#booking-modal"
+            >
+              Explore Now
+            </button>
+          </div>
+          <!-- carousel-item 1 -->
+        </div>
+        <!-- carousel-item slide-3 -->
+        <div class="carousel-item c-item">
+          <img
+            src="./img/carousel_3.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 3"
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5" style="color: #32cd32">
+              Master the Craft
+            </p>
+
+            <h3 class="display-1 fw-bolder" style="color: #ff4500">
+              Become a Full Stack Developer
+            </h3>
+
+            <button
+              class="btn btn-danger px-4 py-2 fs-5 mt-5"
+              data-bs-toggle="modal"
+              data-bs-target="#booking-modal"
+            >
+              Join Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- carousel-control-prev start -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#home"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#home"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Hero Part End -->
+
+    <!-- about part start -->
+    <section id="about" class="about">
+      <div class="container">
+        <!-- about center for heading -->
+        <div class="text-center my-5">
+          <h1 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
+            About
+            <span class="text-primary">me</span>
+          </h1>
+          <hr class="w-25 m-auto" />
+        </div>
+
+        <!-- about row  -->
+        <div class="row">
+          <!--  Text and Accordion -->
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 col-12"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <h2>What do you <span class="text-primary">want to know?</span></h2>
+            <!-- Question with highlighted part -->
+            <p class="p-2">
+              Welcome to our website! Our goal is to provide an engaging and
+              enlightening learning experience for everyone. Through our
+              resources and expertise, we strive to inspire curiosity and a love
+              for knowledge.
+            </p>
+            <button type="button" class="btn btn-light mb-5">
+              More about me
+            </button>
+
+            <!-- Accordion for detailed information -->
+            <div
+              class="accordion"
+              id="about_accordion"
+              data-aos="zoom-in-left"
+              data-aos-offset="200"
+              data-aos-duration="1200"
+            >
+              <!-- First accordion item -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    My Dreams
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#about_accordion"
+                >
+                  <div class="accordion-body">
+                    <strong
+                      >My vision for the future is filled with endless learning
+                      and growth.</strong
+                    >
+                    I aspire to make a difference in the world through
+                    knowledge, creativity, and technology. I believe in setting
+                    big goals, whether it’s mastering new skills, contributing
+                    to meaningful projects, or positively impacting the lives of
+                    others.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Second accordion item -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    My Qualifications
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#about_accordion"
+                >
+                  <div class="accordion-body">
+                    <strong
+                      >My educational journey has been diverse and
+                      enriching.</strong
+                    >
+                    From foundational subjects in science and technology to
+                    specialized courses in engineering and programming, I’ve
+                    gained skills that prepare me to tackle real-world
+                    challenges. With hands-on project experience and a
+                    commitment to continuous learning, I’m equipped to take on
+                    new opportunities.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Third accordion item -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    My Hobbies
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#about_accordion"
+                >
+                  <div class="accordion-body">
+                    <strong
+                      >Beyond academics and work, I am passionate about
+                      exploring new interests.</strong
+                    >
+                    I enjoy reading, staying active, and spending time in
+                    nature. Whether it's diving into a good book, blogging, or
+                    finding inspiration through travel, my hobbies allow me to
+                    unwind, stay curious, and maintain a balanced lifestyle.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side content: Image -->
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./img/about_img.jpg"
+              class="img-fluid img-thumbnail"
+              alt="About Study Image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about part end -->
+
+    <!-- Project Section Start -->
+    <article id="project" class="article py-5 bg-light">
+      <div class="container">
+        <div class="text-center my-5">
+          <h1 data-aos="fade-up" data-aos-offset="200">
+            Our <span class="text-primary">Project</span>
+          </h1>
+          <hr class="w-25 m-auto" />
+        </div>
+        <!--  row start -->
+        <div class="row g-4 mt-3">
+          <!-- Card 1 -->
+          <div
+            class="col-sm-12 col-md-4 col-lg-4 col-12 pt-3"
+            style="height: 450px"
+            data-aos="zoom-in-up"
+            data-aos-delay="100"
+            data-aos-offset="200"
+          >
+            <div class="card h-100 project-card">
+              <div style="height: 83%">
+                <img
+                  src="./img/project_1.jpg"
+                  class="card-img-top h-50"
+                  alt="Effective Study Habits"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Effective Study Habits</h5>
+                  <p class="card-text">
+                    Developing effective study habits can significantly improve
+                    your learning outcomes.
+                  </p>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="col-sm-12 col-md-4 col-lg-4 col-12 pt-3"
+            style="height: 450px"
+            data-aos="zoom-in-up"
+            data-aos-delay="200"
+            data-aos-offset="200"
+          >
+            <div class="card h-100 project-card">
+              <div style="height: 83%">
+                <img
+                  src="./img/project_2.jpg"
+                  class="card-img-top h-50"
+                  alt="Time Management Tips"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Time Management Tips</h5>
+                  <p class="card-text">
+                    Use tools like planners, apps, and to-do lists to prioritize
+                    tasks and avoid feeling overwhelmed.
+                  </p>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="col-sm-12 col-md-4 col-lg-4 col-12 pt-3"
+            style="height: 450px"
+            data-aos="zoom-in-up"
+            data-aos-delay="300"
+            data-aos-offset="200"
+          >
+            <div class="card h-100 project-card">
+              <div style="height: 83%">
+                <img
+                  src="./img/project_3.jpg"
+                  class="card-img-top h-50"
+                  alt="Preparing for Exams"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Preparing for Exams</h5>
+                  <p class="card-text">
+                    Effective exam preparation involves understanding the
+                    material, practicing, and maintaining a healthy lifestyle.
+                  </p>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <a href="#" class="btn btn-primary mt-auto">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Project Section End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="services py-5 bg-light">
+      <div class="container">
+        <div class="text-center my-5">
+          <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+            Our <span class="text-primary">Services</span>
+          </h1>
+          <hr class="w-25 m-auto" />
+        </div>
+
+        <!-- Services Row 1 -->
+        <div class="row g-4">
+          <!-- Social Media Marketing -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <div class="card-top-height">
+                  <div class="icon-container">
+                    <i class="fa-brands fa-instagram icon"></i>
+                  </div>
+                  <h5 class="card-title mt-3">Social Media Marketing</h5>
+                  <p class="card-text">
+                    Boost your brand's online presence with tailored social
+                    media strategies on platforms like Facebook, Instagram, and
+                    Twitter.
+                  </p>
+                </div>
+                <a href="#" class="btn btn-primary">Start Your Campaign</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development & Design -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card service-card h-100 text-white bg-primary">
+              <div class="card-body text-center">
+                <div class="card-top-height">
+                  <div class="icon-container text-dark bg-white">
+                    <i class="fa-solid fa-laptop-code icon"></i>
+                  </div>
+                  <h5 class="card-title mt-3">Web Development & Design</h5>
+                  <p class="card-text">
+                    Craft stunning, user-friendly, and responsive websites for a
+                    seamless experience on all devices.
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger">Get Your Website</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Writing & Copywriting -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <div class="card-top-height">
+                  <div class="icon-container">
+                    <i class="fa-solid fa-pencil-alt icon"></i>
+                  </div>
+                  <h5 class="card-title mt-3">Content Writing & Copywriting</h5>
+                  <p class="card-text">
+                    Engage audiences with high-quality, SEO-optimized content
+                    for blogs, websites, and more.
+                  </p>
+                </div>
+                <a href="#" class="btn btn-primary">Read Our Blogs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services Row 2 -->
+        <div class="row g-4 mt-4">
+          <!-- SEO -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <div class="card-top-height">
+                  <div class="icon-container">
+                    <i class="fa-solid fa-search icon"></i>
+                  </div>
+                  <h5 class="card-title mt-3">
+                    Search Engine Optimization (SEO)
+                  </h5>
+                  <p class="card-text">
+                    Maximize website visibility on search engines with
+                    comprehensive SEO strategies.
+                  </p>
+                </div>
+                <a href="#" class="btn btn-primary">Read Our Blogs</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Brand Strategy & Consulting -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="card service-card h-100 text-white bg-primary">
+              <div class="card-body text-center">
+                <div class="card-top-height">
+                  <div class="icon-container text-dark bg-white">
+                    <i class="fa-solid fa-lightbulb icon"></i>
+                  </div>
+                  <h5 class="card-title mt-3">Brand Strategy & Consulting</h5>
+                  <p class="card-text">
+                    Develop a powerful brand identity and strategies that
+                    resonate with your target audience.
+                  </p>
+                </div>
+                <a href="#" class="btn btn-danger">Build Your Brand</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-commerce Solutions -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="card service-card h-100">
+              <div class="card-body text-center">
+                <div class="card-top-height">
+                  <div class="icon-container">
+                    <i class="fa-brands fa-shopify icon"></i>
+                  </div>
+                  <h5 class="card-title mt-3">E-commerce Solutions</h5>
+                  <p class="card-text">
+                    Launch and optimize your online store with intuitive
+                    e-commerce solutions for growth.
+                  </p>
+                </div>
+                <a href="#" class="btn btn-primary">Start Selling Online</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact py-5 bg-light">
+      <div class="container">
+        <div class="text-center my-5" data-aos="fade-up">
+          <h1>Con<span class="text-primary">tact</span></h1>
+          <hr class="w-25 mx-auto" />
+        </div>
+
+        <div class="row">
+          <!-- Contact Form -->
+          <div class="col-md-6 mb-4" data-aos="fade-right">
+            <form class="row g-3 needs-validation contact-form" novalidate>
+              <div class="col-md-6">
+                <label for="inputName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="Enter Your Name"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a Name.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control p-2"
+                  id="inputEmail"
+                  placeholder="Enter Your Email"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide a valid email.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="Enter Your Pass"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a password.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="1234 Main St"
+                  required
+                />
+                <div class="invalid-feedback">Please provide an address.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputCity"
+                  placeholder="Enter Your City"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a city.</div>
+              </div>
+
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select" required>
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback">Please select a state.</div>
+              </div>
+
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputZip"
+                  placeholder="10"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a zip code.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Please provide a message.</div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                    required
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    I agree to the terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100 contact-btn border-0"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Google Map -->
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.834053812271!2d90.35759351431551!3d23.81031238451472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c74b6ff0892d%3A0x1c6e9a19c01bb2c7!2sSadar%20Ghat%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1630242993804!5m2!1sen!2sbd"
+                width="100%"
+                height="350px"
+                style="border: 0; border-radius: 10px"
+                allowfullscreen=""
+                loading="lazy"
+                class="pt-5"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Part Start -->
+    <footer class="footer text-white py-5" style="background-color: #1c1e21">
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Description -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4 text-md-start text-center">
+            <h5 class="footer-logo mb-3 fw-bold text-white">
+              Kausar<span class="text-primary">_blog</span>
+            </h5>
+            <p style="font-size: 0.9rem">
+              Sharing insights, stories, and resources. Connect with us for
+              inspiration, knowledge, and updates on our latest projects.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-6 col-lg-2 mb-4 text-md-start text-center">
+            <h5 class="text-uppercase footer-heading mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#about" class="footer-link">About</a></li>
+              <li><a href="#projects" class="footer-link">Projects</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+              <li><a href="#blog" class="footer-link">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-6 col-md-6 col-lg-3 mb-4 text-md-start text-center">
+            <h5 class="text-uppercase footer-heading mb-3">Contact</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-home mr-2"></i> New York, NY 10012, US</li>
+              <li><i class="fas fa-envelope mr-2"></i> info@gmail.com</li>
+              <li><i class="fas fa-phone mr-2"></i> + 01 234 567 88</li>
+            </ul>
+          </div>
+
+          <!-- Social Links -->
+          <div class="col-12 col-md-6 col-lg-3 mb-4 text-md-start text-center">
+            <h5 class="text-uppercase footer-heading mb-3">Follow Us</h5>
+            <div>
+              <a href="#" class="footer-social-icon me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="footer-social-icon me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="footer-social-icon me-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="footer-social-icon me-2"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center py-3" style="background-color: #16181b">
+        <span class="fw-bold text-primary">©</span> 2024 Copyright:
+        <a href="#" class="text-primary fw-bold text-decoration-none"
+          >Md_Kausar_Ali</a
+        >
+      </div>
+    </footer>
+    <!-- Footer Part End -->
+
+    <!-- js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS JS Initialization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        offset: 200,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+  </body>
+</html>

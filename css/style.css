@@ -1,0 +1,315 @@
+/* Root Variables */
+:root {
+  /* Colors */
+  --primary-color: #1e90ff;
+  --secondary-color: #34495e;
+  --light-bg-color: #f3f6fb;
+  --hover-color: #1a73e8;
+  --text-color-white: #ffffff;
+  --footer-link-color: #6c757d;
+  --text-yellow-color: #f39c12;
+  --footer-text-color: #adb5bd;
+
+  /* Spacing */
+  --section-padding-top: 60px;
+  --section-padding-bottom: 60px;
+
+  /* Font Sizes */
+  --font-size-large: 3rem;
+  --font-size-medium: 1.2rem;
+  --font-size-small: 1rem;
+  --font-size-button: 1rem;
+
+  /* Box Shadows */
+  --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-heavy: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+  /* Border Radius */
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 15px;
+
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-dark {
+  background-color: var(--secondary-color);
+}
+
+.nav-link {
+  color: var(--text-color-white) !important;
+  transition: color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--text-color-white) !important;
+  background-color: var(--hover-color);
+  border-radius: var(--radius-sm);
+}
+
+.nav-item:first-child .nav-link:hover {
+  color: var(--text-color-white) !important;
+  background-color: var(--hover-color);
+}
+
+.nav-link.active {
+  color: var(--text-yellow-color) !important;
+  font-weight: bold;
+}
+
+.navbar {
+  box-shadow: var(--shadow-heavy);
+}
+
+/* Hero */
+.c-item {
+  /*height: auto;*/
+  /*max-height: 480px;*/
+  height: 480px;
+}
+
+.c-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* About Section */
+#about {
+  background-color: var(--light-bg-color);
+  padding: var(--section-padding-top) 0 var(--section-padding-bottom);
+}
+
+.about h1 {
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.about h1 span {
+  color: var(--primary-color);
+}
+
+.about p {
+  font-size: var(--font-size-medium);
+  color: var(--secondary-color);
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+.about button {
+  font-size: var(--font-size-button);
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  border: none;
+  padding: 10px 30px;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.about button:hover {
+  background-color: var(--hover-color);
+}
+
+.about .accordion-button {
+  background-color: var(--light-bg-color);
+  color: var(--secondary-color);
+  border: 1px solid #bdc3c7;
+}
+
+.about .accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+}
+
+.about .accordion-body {
+  background-color: var(--light-bg-color);
+  color: var(--secondary-color);
+}
+
+.about .accordion-item {
+  margin-bottom: 15px;
+}
+
+.about .img-fluid {
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-fast);
+}
+
+.about .img-fluid:hover {
+  transform: scale(1.05);
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .col-sm-12 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .about h1 {
+    font-size: 2.5rem;
+  }
+
+  .about button {
+    font-size: var(--font-size-small);
+    padding: 8px 20px;
+  }
+
+  .about .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .col-sm-12 {
+    text-align: center;
+  }
+}
+
+/* Project Section */
+.project-card {
+  transition: transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+  border: none;
+  box-shadow: var(--shadow-light);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-heavy);
+}
+
+.project-card .card-title {
+  font-size: 1.25rem;
+  color: var(--hover-color);
+}
+
+.project-card .btn-primary {
+  transition: background-color var(--transition-fast);
+}
+
+.project-card .btn-primary:hover {
+  background-color: var(--navbar-bg-color);
+}
+
+/* Services Section */
+.service-card {
+  transition: transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+  border: none;
+  box-shadow: var(--shadow-light);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-heavy);
+}
+.card-top-height {
+  height: 88%;
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--navbar-bg-color);
+  color: #fff;
+}
+
+.text-primary .icon-container {
+  background-color: var(--light-bg-color);
+}
+
+.service-card .btn-primary:hover {
+  background-color: var(--navbar-bg-color);
+}
+
+.service-card .btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Contact Section */
+.contact-form .form-control {
+  border-radius: var(--radius-sm);
+}
+
+.contact-form .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form .contact-btn {
+  background-color: var(--primary-color);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast), transform 0.2s ease;
+}
+
+.contact-form .contact-btn:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+/* Footer Section */
+.footer-logo {
+  font-size: 1.5rem;
+}
+
+.footer-heading {
+  color: #d1d5db;
+  font-size: 1rem;
+}
+
+.footer-link {
+  color: var(--footer-link-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--text-yellow-color);
+}
+
+.footer-social-icon {
+  font-size: 1.2rem;
+  color: var(--text-color-white);
+  margin: 0 10px;
+  transition: color var(--transition-fast), transform 0.2s;
+}
+
+.footer-social-icon:hover {
+  color: var(--text-yellow-color);
+  transform: scale(1.1);
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: var(--footer-text-color);
+}
